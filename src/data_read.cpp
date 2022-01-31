@@ -22,7 +22,7 @@ void data::readPedigrees(string fped) {
 			switch (type) {
 				case 2: n_tri ++; break;
 				case 1: n_duo ++; break;
-				default: n_tri ++; break;
+				default: n_unr ++; break;
 			}
 		}
 	}
