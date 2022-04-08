@@ -7,7 +7,6 @@ RMATH_INC=$(CONDA_PREFIX)/include
 RMATH_LIB=$(CONDA_PREFIX)/lib
 HTSLD_INC=$(CONDA_PREFIX)/include
 HTSLD_LIB=$(CONDA_PREFIX)/lib
-#export LD_LIBRARY_PATH=${LIBRARY_PATH}:$(CONDA_PREFIX)/lib
 
 #COMPILER MODE C++11
 CXX=g++ -std=c++0x
@@ -28,7 +27,7 @@ CFILE=$(shell find src -name *.cpp)
 OFILE=$(shell for file in `find src -name *.cpp`; do echo obj/$$(basename $$file .cpp).o; done)
 VPATH=$(shell for file in `find src -name *.cpp`; do echo $$(dirname $$file); done)
 
-#DEFAULT VERSION (I.E. UNIGE DESKTOP RELEASE VERSION)
+#DEFAULT VERSION 
 all: desktop
 
 #UNIGE DESKTOP RELEASE VERSION
