@@ -14,5 +14,5 @@ The environment to build the software can be conducted by `conda env create -f e
 * "--fam": PLINK formatted FAM file for evaluating IDs 
 * "--reg": BED-formatted region string for evaluating switch error rates  [required] 
 * "--ps": Phase set information (more information [here](http://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html#readaware))
-* "--out": output prefix, the outputfiles have extensions `*.vser`,`*.mser.gz`  [required]
+* "--out": output prefix, the outputfiles have extensions `*.iser`, `*.vser`,`*.mser.gz`  [required]
 * "--maf": minor allele frequency cutoff
