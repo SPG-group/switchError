@@ -16,3 +16,31 @@ The environment to build the software can be conducted by `conda env create -f e
 * "--ps": Phase set information (more information [here](http://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html#readaware))
 * "--out": output prefix, the outputfiles have extensions `*.iser`, `*.vser`,`*.mser.gz`  [required]
 * "--maf": minor allele frequency cutoff
+
+## Output File Definitions
+
+1. `*.iser`
+
+The columns in order are:
+  * individual index
+  * individual name
+  * number of mendel errors
+  * number of opportunities for mendel errors
+  * number of typing errors
+  * number of opportunities for typing errors
+  * number of switch errors 
+  * number of opportunities for switch errors
+
+2. `*.vser`
+  * variant-level index
+  * position of variant
+  * minor allele count
+  * minor allele frequency 
+  * number of mendel errors
+  * number of opportunities for mendel errors
+  * number of typing errors
+  * number of opportunities for typing errors
+  * number of switch errors 
+  * number of opportunities for switch errors
+
+Across both settings, we largely want to look at how to use the last two columns and their distribution across individuals. 
